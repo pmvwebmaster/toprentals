@@ -1,0 +1,200 @@
+2025-05-22T21:27:52+00:00 DEBUG Info: Begin processing payment for order 379 for the amount of 95.40
+2025-05-22T21:27:53+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-22T21:27:55+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 6jsTMw49t9XJ967D
+                )
+
+            [refId] => 379
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 95.40
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzNEUxODgwREE0M0FERThEN0Q1Q0M4OEMxNTBFQ0NFRDIxMURBOTc2NUVDMzQzNjhGMkZENDA4OEMyMDUyRTk3MzA0NTdBREM0Mzk0OTYxNDY0NkQ4N0M1QjlDN0MyNDhFIiwidG9rZW4iOiI5NzQ3OTQ5MjY4NzAxMDk1MTAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 379
+                            [description] => happyrentalsflorida - Order 379
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => ::1
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [responseCode] => 1
+            [authCode] => WUIJCP
+            [avsResultCode] => Y
+            [cvvResultCode] => P
+            [cavvResultCode] => 2
+            [transId] => 80041231916
+            [refTransID] => 
+            [transHash] => 
+            [testRequest] => 0
+            [accountNumber] => XXXX0015
+            [accountType] => MasterCard
+            [messages] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => 1
+                            [description] => This transaction has been approved.
+                        )
+
+                )
+
+            [userFields] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => Customer Name
+                            [value] => PABLO VIANA
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => Customer Email
+                            [value] => pabloviana.unisinos@gmail.com
+                        )
+
+                )
+
+            [transHashSha2] => 
+            [SupplementalDataQualificationIndicator] => 0
+            [networkTransId] => QVJRDN2W8Z9XHIC3KZ6TKN0
+        )
+
+    [refId] => 379
+    [messages] => Array
+        (
+            [resultCode] => Ok
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => I00001
+                            [text] => Successful.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-22T21:27:55+00:00 DEBUG Request was successful.
+2025-05-22T21:27:56+00:00 DEBUG Success: Authorize.Net charge completed for &#36;95.40 (Charge ID: 80041231916). 
+
+AVS Response: Y - Street Address: Match - First 5 Digits of ZIP: Match 
+
+CVV2 Response: P - Not Processed

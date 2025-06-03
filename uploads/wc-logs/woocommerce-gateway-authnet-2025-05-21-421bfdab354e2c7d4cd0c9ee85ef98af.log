@@ -1,0 +1,200 @@
+2025-05-21T03:04:35+00:00 DEBUG Info: Begin processing payment for order 376 for the amount of 100.70
+2025-05-21T03:04:35+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-21T03:04:36+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 6jsTMw49t9XJ967D
+                )
+
+            [refId] => 376
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 100.70
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzNkIyRkVEQjZFQTNCNEIzQTgzQTE0NTQxRjYxQzZBMTZDN0ExNUNBQzI1OTIxQzJDQUMyODI3RjQ1QkVBNDU5MTcwRDJDMTU5OUEzQkZCOTU3OThDNThEN0Q2NzZEQTNGIiwidG9rZW4iOiI5NzQ3Nzk2NjczNTY2NDg4NjAzNjAxIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 376
+                            [description] => happyrentalsflorida - Order 376
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 14
+                            [email] => pabloviana.paypal@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => Pablo
+                            [lastName] => Checkout
+                            [company] => 
+                            [address] => teste testeap
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90050-001
+                            [country] => BR
+                            [phoneNumber] => 
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:bbcc:2899:5a25:a49d
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => Pablo Checkout
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.paypal@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [responseCode] => 1
+            [authCode] => OWVFUX
+            [avsResultCode] => Y
+            [cvvResultCode] => P
+            [cavvResultCode] => 2
+            [transId] => 80041170844
+            [refTransID] => 
+            [transHash] => 
+            [testRequest] => 0
+            [accountNumber] => XXXX0015
+            [accountType] => MasterCard
+            [messages] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => 1
+                            [description] => This transaction has been approved.
+                        )
+
+                )
+
+            [userFields] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => Customer Name
+                            [value] => Pablo Checkout
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => Customer Email
+                            [value] => pabloviana.paypal@gmail.com
+                        )
+
+                )
+
+            [transHashSha2] => 
+            [SupplementalDataQualificationIndicator] => 0
+            [networkTransId] => LGR04S2UKKFW9U45H95O74E
+        )
+
+    [refId] => 376
+    [messages] => Array
+        (
+            [resultCode] => Ok
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => I00001
+                            [text] => Successful.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-21T03:04:36+00:00 DEBUG Request was successful.
+2025-05-21T03:04:37+00:00 DEBUG Success: Authorize.Net charge completed for &#36;100.70 (Charge ID: 80041170844). 
+
+AVS Response: Y - Street Address: Match - First 5 Digits of ZIP: Match 
+
+CVV2 Response: P - Not Processed

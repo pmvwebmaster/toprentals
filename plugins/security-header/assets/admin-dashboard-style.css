@@ -1,0 +1,190 @@
+/* Plugin Admin Wrapper */
+#inspiredmonks-admin-wrapper {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    background: #f9fafb;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 1000px;
+    margin: 40px auto;
+    border: 1px solid #e0e0e0;
+}
+
+/* Main Heading */
+#inspiredmonks-admin-wrapper h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Section Wrapper */
+.inspiredmonks-settings-section {
+    margin-top: 40px;
+}
+
+/* Settings Fields Grid */
+.inspiredmonks-settings-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Single Option Card */
+.inspiredmonks-clickable-box {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.inspiredmonks-clickable-box:hover {
+    background-color: #f3f4f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Icon inside the box */
+.inspiredmonks-icon {
+    font-size: 24px;
+    color: #2563eb;
+    flex-shrink: 0;
+}
+
+/* Text inside the box */
+.title-header-im {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Custom select and input fields inside settings */
+.inspiredmonks-settings-section label {
+    font-weight: 600;
+    color: #374151;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inspiredmonks-settings-section input[type="text"],
+.inspiredmonks-settings-section textarea,
+.inspiredmonks-settings-section select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background: #ffffff;
+    transition: border 0.3s ease;
+}
+
+.inspiredmonks-settings-section input[type="text"]:focus,
+.inspiredmonks-settings-section textarea:focus,
+.inspiredmonks-settings-section select:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+/* Checkbox Custom Style */
+input[type="checkbox"] {
+    accent-color: #2563eb;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Submit Button */
+.inspiredmonks-submit-button {
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 40px auto 0;
+}
+
+.inspiredmonks-submit-button:hover {
+    background: linear-gradient(90deg, #1d4ed8, #1e40af);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Summary Section */
+#category-summary {
+    margin-top: 40px;
+    text-align: center;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#category-summary h3 {
+    font-size: 22px;
+    color: #111827;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.category-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-box {
+    background: #f3f4f6;
+    border-radius: 8px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    border: 1px solid #d1d5db;
+    transition: background 0.3s ease;
+}
+
+.category-box:hover {
+    background: #e5e7eb;
+}
+
+.category-box .category-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.category-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.category-count {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .inspiredmonks-settings-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .category-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}

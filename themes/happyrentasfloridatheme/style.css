@@ -1,0 +1,205 @@
+/*
+Theme Name: TOP Rentals Theme old
+Theme URI: http://seudominio.com
+Author: Rai Comunicação
+Description: Tema WordPress para aluguel de scooters e carrinhos de bebê em Orlando.
+Version: 1.0
+*/
+
+.gtranslate_wrapper {
+  display: flex;
+}
+a.glink.nturl.notranslate {
+  width: 41px;
+  /* height: max-content; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* display: flex; */
+  padding: 5px;
+}
+.single-product .item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: anchor-center;
+}
+
+.single-product .item-wrapper .item-img,
+.single-product .item-wrapper .wrap-description {
+  width: 45%;
+}
+.single-product .item-wrapper .wrap-short-description {
+  width: 70%;
+  margin: 0 auto;
+}
+.cart-item dd {
+  width: 100%;
+  overflow: hidden;
+}
+
+.u-column1.col-1.woocommerce-Address {
+  width: 98%;
+}
+
+.woocommerce img,
+.woocommerce-page img {
+  height: auto;
+  max-width: 300px !important;
+}
+
+.u-column2.col-2.woocommerce-Address,
+#wpadminbar {
+  display: none;
+}
+
+ul.wc-item-meta .animate__animated.animate__delay-1s {
+  display: flex;
+}
+.woocommerce td.product-name .wc-item-meta p,
+.woocommerce td.product-name .wc-item-meta:last-child,
+.woocommerce td.product-name dl.variation p,
+.woocommerce td.product-name dl.variation:last-child {
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce td.product-name dl.variation:last-child,
+ul.wc-item-meta,
+ul.wc-item-meta li {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: baseline;
+  width: 100%;
+}
+body.page-template-default.page.page-id-8.logged-in.theme-happyrentasfloridatheme.woocommerce-checkout.woocommerce-page.woocommerce-order-received.woocommerce-js
+ {
+  padding-top: 3%;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles))
+  #respond
+  input#submit.alt,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles))
+  a.button.alt,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles))
+  button.button.alt,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles))
+  input.button.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(
+    :not(.edit-post-visual-editor)
+  )
+  .woocommerce
+  #respond
+  input#submit.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(
+    :not(.edit-post-visual-editor)
+  )
+  .woocommerce
+  a.button.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(
+    :not(.edit-post-visual-editor)
+  )
+  .woocommerce
+  button.button.alt,
+:where(body:not(.woocommerce-block-theme-has-button-styles)):where(
+    :not(.edit-post-visual-editor)
+  )
+  .woocommerce
+  input.button.alt {
+  background-color: green !important;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+h5.totalStyle {
+  font-size: 1em;
+  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border: 3px green solid;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+label[for="payment_method_authnet"] img {
+  width: 2rem;
+  display: inline;
+  border-radius: unset !important;
+}
+
+h3.menu-tite.mbr-fonts-style.display-4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.right-wrap.d-flex.align-items-center {
+  flex-wrap: nowrap;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+.gtranslate_wrapper img {
+  width: 2rem !important;
+  height: auto !important;
+  object-fit: cover;
+}
+.right-wrap.d-flex.align-items-center a[href="/cart"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: #fff !important;
+    border-radius: 50%;
+    padding: 0.5rem;
+    position: fixed;
+    bottom: 1em;
+    right: 7rem;
+    border: blue solid;
+    font-size: 2rem;
+}
+.right-wrap.d-flex.align-items-center font font {
+  background-color: #fff !important;
+  border-radius: 50%;
+  padding: 0.5rem;
+  width: 2rem;
+}
+
+.right-wrap.d-flex.align-items-center 
+.navbar-brand {
+  position: relative;
+}
+.account-link.text-center.mt-2 {
+  display: flex;
+  flex-direction: column;
+}
+.wrap.nav-account {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .single-product .item-wrapper .item-img,
+  .single-product .item-wrapper .wrap-description {
+    width: 100%;
+  }
+  h3.menu-title.mbr-fonts-style.display-4 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .single-product .item-wrapper .item-img,
+  .single-product .item-wrapper .wrap-description {
+    width: 100%;
+  }
+  .single-product .item-wrapper .wrap-short-description {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

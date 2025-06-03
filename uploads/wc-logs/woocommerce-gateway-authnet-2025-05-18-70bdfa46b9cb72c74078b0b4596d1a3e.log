@@ -1,0 +1,2375 @@
+2025-05-18T00:29:09+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T00:29:09+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T00:29:10+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzMDVGNTk5N0JBQzM1QzA1MzA2MTAzNTM0ODE2OUE2MzQ3OEZCRERFMDIyMTQ2MDFDNDJCNDE2ODI3Mjk5MTNBOUVENzdBQTVDMzBBOEEyNkIyQ0U0MEY2QkM0MTQwNTM1IiwidG9rZW4iOiI5NzQ3NTI4MTQ5MDA0MDk2NjAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                            [lineItem] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [itemId] => 231
+                                            [name] => Scooter M1 4 rodas
+                                            [quantity] => 1
+                                            [unitPrice] => 121.89
+                                            [taxable] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T00:29:10+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T00:29:10+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T00:30:36+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T00:30:36+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T00:30:37+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUyNDQyNzY0Q0IxN0NEM0YxMzMwMUU0Mzc3NzNFMTgwNEE5MjgyQUIyQjlCMEVERDNGRDlBNUYyMTlBQjIxOUREOEYxNTU4REVBRTBCNkIwOTlCOTRDMUUyRDgyMTFGN0Y3IiwidG9rZW4iOiI5NzQ3NTI4MjM1ODYzMDk2NzAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                            [lineItem] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [itemId] => 231
+                                            [name] => Scooter M1 4 rodas
+                                            [quantity] => 1
+                                            [unitPrice] => 121.89
+                                            [taxable] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T00:30:37+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T00:30:37+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T00:37:36+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T00:37:36+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T00:37:37+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUyQkJBOUY2RTVBMkJGOTkzNUFFOUY4MjVEMDU2RDhBM0NGNjk1Q0IxMDk5NDYwQzc2N0ZCMDUzOEYzMTk2NjM4MERCODg1QkQzMzZERTNBRDdDNzA3RkJCOUQ5OThCQjFFIiwidG9rZW4iOiI5NzQ3NTI4NjU1ODg0MDczNjAzNjAxIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                            [lineItem] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [itemId] => 231
+                                            [name] => Scooter M1 4 rodas
+                                            [quantity] => 1
+                                            [unitPrice] => 121.89
+                                            [taxable] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T00:37:37+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T00:37:37+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T00:45:13+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T00:45:13+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T00:45:14+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzNzdFNkVDOTg5QUE3RUY5MUUwQzhGN0E1QjQyRjA5RkJDOEU3NjlERUFBQ0Y0OUU0QkZDRTRFQTU4OTM1N0E2NzkyQzFGMzQ0NzFBRTNBOEM0NENGRTcwRkI3MzgzRUQ2IiwidG9rZW4iOiI5NzQ3NTI5MTEzNTc5MDk2OTAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                            [lineItem] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [itemId] => 231
+                                            [name] => Scooter M1 4 rodas
+                                            [quantity] => 1
+                                            [unitPrice] => 121.89
+                                            [taxable] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T00:45:14+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T00:45:14+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T00:45:32+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T00:45:32+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T00:45:33+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUyMkI2RjZGRDFCQUQ0RkMwRTNDNjZCOTlBNkZDOEY2MUUzN0U1OERCQ0NDQjIxREUxNTRBQjdCMTI4MzNCRDg5ODAyODcxNUNDNzNBODZDOURFRjgzREIyOTEyOTUxODJGIiwidG9rZW4iOiI5NzQ3NTI5MTMyNTcyMDk3MDAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                            [lineItem] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [itemId] => 231
+                                            [name] => Scooter M1 4 rodas
+                                            [quantity] => 1
+                                            [unitPrice] => 121.89
+                                            [taxable] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T00:45:33+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T00:45:33+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T00:47:25+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T00:47:25+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T00:47:26+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzOTRDRDkzREU1NUJGQkY5OUQ2NjVENzJEQ0JDMzU4NTBCNTg1MzJBQkNCODVCMjQ4QTJCQTg2QkJCOUU4RTU0MTYyMDYzM0MxNzZFODM2QjZCRDdEMjExRjg3RTQwQTNDIiwidG9rZW4iOiI5NzQ3NTI5MjQ0ODE4MDczOTAzNjAxIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                            [lineItem] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [itemId] => 231
+                                            [name] => Scooter M1 4 rodas
+                                            [quantity] => 1
+                                            [unitPrice] => 121.89
+                                            [taxable] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T00:47:26+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T00:47:26+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T00:48:19+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T00:48:19+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T00:48:20+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUyNDgwQTU5MzUzMDFGQzA4RTc5NzFDMDkyQzgzRTAyRkYyOEQ1MTQ4NUMwNzdFNUE1NTU1MjE4NkJBRjVCNkZERTkwMjRBNDI0NEU4QTEwMjlEMjIxNUJERUI1NkVBMjQ5IiwidG9rZW4iOiI5NzQ3NTI5Mjk5MzgzMDk3MjAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                            [lineItem] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [itemId] => 231
+                                            [name] => Scooter M1 4 rodas
+                                            [quantity] => 1
+                                            [unitPrice] => 121.89
+                                            [taxable] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 1
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T00:48:20+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T00:48:20+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T01:00:46+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T01:00:46+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T01:00:46+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUyRjAxOEY3N0FGODAzQzMzM0RBRDc0MkFFOEZGNEQ3NEI2QjdCRjMzRDQ4QUU3MTE1RjlBN0VGNTBFOTMwNDREQzYyMEMxQUQxNDM0NDMzOEYxQUIwMzM1MkQxODUxOTVBIiwidG9rZW4iOiI5NzQ3NTMwMDQ1NzM5MDk3MzAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T01:00:46+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T01:00:46+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T01:19:24+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T01:19:24+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T01:19:25+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUyNUI2NUUyQUMwQkQ4RkIxRkQ4NjhGMEY5N0Q5QjQ0NDJDMTBFM0ZCRDg1N0NDRDY0RDZFMjVDMUNDNzIxQ0IzNzc3MzlBRTE3ODlBRUQwQkU5MkU0NDI3NTNGRDg4NzlDIiwidG9rZW4iOiI5NzQ3NTMxMTY0MTIwMDc0NjAzNjAxIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T01:19:25+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T01:19:25+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T01:22:15+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T01:22:15+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T01:22:16+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUyMDhEMUUyNEYzNzlFMzJCQUJFNTAwQUQ2QjU4N0NCNEIwMzBBRjBFMTUxQTkxQzQxMEJFOEY2NjdDNEJEQTk1NkY3ODVGMDIwMTI0QzREMjZCRTdENDY1MjdENUY0RkEwIiwidG9rZW4iOiI5NzQ3NTMxMzM1NDM2MDc0NzAzNjAxIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T01:22:16+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T01:22:16+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T01:38:48+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T01:38:48+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T01:38:48+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzRTBEMjQ0OEFCRTdCQjlFN0IxRjkyNTUwNjQ2QThFQ0MyMjg4NDY3NzA2Qjk4QkQ0Q0IxMDJBOTQ2QTRBQjZCNTNGMDhBNjMwMjlGQTkyNTJFQUNGMDBGNjhGNDg0OUE1IiwidG9rZW4iOiI5NzQ3NTMyMzI3ODAwMDk5MDAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T01:38:48+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T01:38:48+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T01:48:07+00:00 DEBUG Info: Begin processing payment for order 365 for the amount of 121.89
+2025-05-18T01:48:07+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T01:48:08+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 4kJd237rZu59qAZd
+                )
+
+            [refId] => 365
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 121.89
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzOEZDRTE3ODg5QzYyQkFDQTlEM0Q0QUJDOEZBODY5NDYxRjRBMkUwNDI2OTYzNzg3NDczREY4OUM4NjE0MjFEMjBGMDVDMzcyRUEwRTYxRDAyMkRBMTMxQzAxNEMzMjAxIiwidG9rZW4iOiI5NzQ3NTMyODg2ODczMDk5NTAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 365
+                            [description] => happyrentalsflorida - Order 365
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [SupplementalDataQualificationIndicator] => 0
+        )
+
+    [refId] => 365
+    [messages] => Array
+        (
+            [resultCode] => Error
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => E00007
+                            [text] => User authentication failed due to invalid authentication values.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T01:48:08+00:00 DEBUG Error: Request Failed. E00007 - User authentication failed due to invalid authentication values.
+2025-05-18T01:48:08+00:00 DEBUG Error: User authentication failed due to invalid authentication values.
+2025-05-18T03:41:09+00:00 DEBUG Info: Begin processing payment for order 368 for the amount of 106.00
+2025-05-18T03:41:09+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T03:41:10+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 6jsTMw49t9XJ967D
+                )
+
+            [refId] => 368
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 106.00
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzMEE1MDA2NzI3MjUwMDY0OTgzN0Y2NTE4ODhFMEJDRUI4ODYwODA3QTE2NkVGRUVFM0VFMTlDNUIzMjJEN0MyMTY3RkE1NDE1RTdDRjUxNjcxM0JGNDYwMDZEMUZERDcyIiwidG9rZW4iOiI5NzQ3NTM5NjY5MTQ2MDc4MjAzNjAxIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 368
+                            [description] => happyrentalsflorida - Order 368
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [responseCode] => 1
+            [authCode] => CM2GSB
+            [avsResultCode] => Y
+            [cvvResultCode] => P
+            [cavvResultCode] => 2
+            [transId] => 80041098531
+            [refTransID] => 
+            [transHash] => 
+            [testRequest] => 0
+            [accountNumber] => XXXX0015
+            [accountType] => MasterCard
+            [messages] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => 1
+                            [description] => This transaction has been approved.
+                        )
+
+                )
+
+            [userFields] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => Customer Name
+                            [value] => PABLO VIANA
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => Customer Email
+                            [value] => pabloviana.unisinos@gmail.com
+                        )
+
+                )
+
+            [transHashSha2] => 
+            [SupplementalDataQualificationIndicator] => 0
+            [networkTransId] => 4W36PHWF1IL2P0HSFQ66Q71
+        )
+
+    [refId] => 368
+    [messages] => Array
+        (
+            [resultCode] => Ok
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => I00001
+                            [text] => Successful.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T03:41:10+00:00 DEBUG Request was successful.
+2025-05-18T03:41:11+00:00 DEBUG Success: Authorize.Net charge completed for &#36;106.00 (Charge ID: 80041098531). 
+
+AVS Response: Y - Street Address: Match - First 5 Digits of ZIP: Match 
+
+CVV2 Response: P - Not Processed
+2025-05-18T04:01:27+00:00 DEBUG Info: Begin processing payment for order 369 for the amount of 116.59
+2025-05-18T04:01:27+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-18T04:01:28+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 6jsTMw49t9XJ967D
+                )
+
+            [refId] => 369
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 116.59
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzNUQyOEE3MkJEMDAxQjQ4RkE4MjNFQzMyNkI1Njg2QTI2NkVEMEYwN0ZCRjZFNDk1MTEyRDcxQ0ZEMkIzQThBNDhENDM2MjE4Qjg3ODZFMzExOTQ5QTkxMTZBQzNEMkQ1IiwidG9rZW4iOiI5NzQ3NTQwODg2NzkwMTAxMjAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 369
+                            [description] => happyrentalsflorida - Order 369
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 1
+                            [email] => pabloviana.unisinos@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Washington Luiz 602
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90010-460
+                            [country] => BR
+                            [phoneNumber] => +5551985863862
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => 2804:14d:4ca6:119d:977f:811e:176b:8330
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => pabloviana.unisinos@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [responseCode] => 1
+            [authCode] => DKSLIG
+            [avsResultCode] => Y
+            [cvvResultCode] => P
+            [cavvResultCode] => 2
+            [transId] => 80041098648
+            [refTransID] => 
+            [transHash] => 
+            [testRequest] => 0
+            [accountNumber] => XXXX1111
+            [accountType] => Visa
+            [messages] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => 1
+                            [description] => This transaction has been approved.
+                        )
+
+                )
+
+            [userFields] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => Customer Name
+                            [value] => PABLO VIANA
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => Customer Email
+                            [value] => pabloviana.unisinos@gmail.com
+                        )
+
+                )
+
+            [transHashSha2] => 
+            [SupplementalDataQualificationIndicator] => 0
+            [networkTransId] => 4ISI2WZJ2M8WPB5577XRFLG
+        )
+
+    [refId] => 369
+    [messages] => Array
+        (
+            [resultCode] => Ok
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => I00001
+                            [text] => Successful.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-18T04:01:28+00:00 DEBUG Request was successful.
+2025-05-18T04:01:29+00:00 DEBUG Success: Authorize.Net charge completed for &#36;116.59 (Charge ID: 80041098648). 
+
+AVS Response: Y - Street Address: Match - First 5 Digits of ZIP: Match 
+
+CVV2 Response: P - Not Processed

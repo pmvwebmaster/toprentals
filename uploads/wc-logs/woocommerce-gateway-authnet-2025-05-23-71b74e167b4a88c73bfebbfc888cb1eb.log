@@ -1,0 +1,200 @@
+2025-05-23T02:30:06+00:00 DEBUG Info: Begin processing payment for order 380 for the amount of 106.00
+2025-05-23T02:30:06+00:00 DEBUG Info: Getting payment source with new card details.
+2025-05-23T02:30:08+00:00 DEBUG 
+Posting to: 
+https://apitest.authorize.net/xml/v1/request.api
+Request: 
+Array
+(
+    [createTransactionRequest] => Array
+        (
+            [merchantAuthentication] => Array
+                (
+                    [name] => 539jNL3aW3eR
+                    [transactionKey] => 6jsTMw49t9XJ967D
+                )
+
+            [refId] => 380
+            [transactionRequest] => Array
+                (
+                    [transactionType] => authCaptureTransaction
+                    [amount] => 106.00
+                    [currencyCode] => USD
+                    [payment] => Array
+                        (
+                            [opaqueData] => Array
+                                (
+                                    [dataDescriptor] => COMMON.ACCEPT.INAPP.PAYMENT
+                                    [dataValue] => eyJjb2RlIjoiNTBfMl8wNjAwMDUzMjc4REQ1ODE1MUQzNDgzRDc3ODdBNzMzNTdEQ0Y1NUE4NjIwNThEQTNFRkI2OEYyRjcyMzExODNCRTdGMzJGM0ZDRTNCNEJBNUVBQTNBQTI3OTMzOTYwNEE5NTY2NDhBIiwidG9rZW4iOiI5NzQ3OTY3NDAzODkwMTI2MzAzNjAyIiwidiI6IjEuMSJ9
+                                )
+
+                        )
+
+                    [order] => Array
+                        (
+                            [invoiceNumber] => 380
+                            [description] => happyrentalsflorida - Order 380
+                        )
+
+                    [lineItems] => Array
+                        (
+                        )
+
+                    [tax] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [shipping] => Array
+                        (
+                            [amount] => 0
+                        )
+
+                    [customer] => Array
+                        (
+                            [id] => 8
+                            [email] => raicomunic@gmail.com
+                        )
+
+                    [billTo] => Array
+                        (
+                            [firstName] => PABLO
+                            [lastName] => VIANA
+                            [company] => 
+                            [address] => Avenida Princesa Isabel, 500 217
+                            [city] => Porto Alegre
+                            [state] => RS
+                            [zip] => 90620-000
+                            [country] => BR
+                            [phoneNumber] => +5551980313635
+                        )
+
+                    [shipTo] => Array
+                        (
+                            [firstName] => 
+                            [lastName] => 
+                            [company] => 
+                            [address] => 
+                            [city] => 
+                            [state] => 
+                            [zip] => 
+                            [country] => 
+                        )
+
+                    [customerIP] => ::1
+                    [transactionSettings] => Array
+                        (
+                            [setting] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [settingName] => duplicateWindow
+                                            [settingValue] => 60
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [settingName] => emailCustomer
+                                            [settingValue] => 
+                                        )
+
+                                )
+
+                        )
+
+                    [userFields] => Array
+                        (
+                            [userField] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [name] => Customer Name
+                                            [value] => PABLO VIANA
+                                        )
+
+                                    [1] => Array
+                                        (
+                                            [name] => Customer Email
+                                            [value] => raicomunic@gmail.com
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+)
+
+Response: 
+Array
+(
+    [transactionResponse] => Array
+        (
+            [responseCode] => 1
+            [authCode] => 4JY3KJ
+            [avsResultCode] => Y
+            [cvvResultCode] => P
+            [cavvResultCode] => 2
+            [transId] => 80041235923
+            [refTransID] => 
+            [transHash] => 
+            [testRequest] => 0
+            [accountNumber] => XXXX0015
+            [accountType] => MasterCard
+            [messages] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => 1
+                            [description] => This transaction has been approved.
+                        )
+
+                )
+
+            [userFields] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => Customer Name
+                            [value] => PABLO VIANA
+                        )
+
+                    [1] => Array
+                        (
+                            [name] => Customer Email
+                            [value] => raicomunic@gmail.com
+                        )
+
+                )
+
+            [transHashSha2] => 
+            [SupplementalDataQualificationIndicator] => 0
+            [networkTransId] => KA0W3789IKQAHX9ED9E8CQV
+        )
+
+    [refId] => 380
+    [messages] => Array
+        (
+            [resultCode] => Ok
+            [message] => Array
+                (
+                    [0] => Array
+                        (
+                            [code] => I00001
+                            [text] => Successful.
+                        )
+
+                )
+
+        )
+
+)
+2025-05-23T02:30:08+00:00 DEBUG Request was successful.
+2025-05-23T02:30:09+00:00 DEBUG Success: Authorize.Net charge completed for &#36;106.00 (Charge ID: 80041235923). 
+
+AVS Response: Y - Street Address: Match - First 5 Digits of ZIP: Match 
+
+CVV2 Response: P - Not Processed

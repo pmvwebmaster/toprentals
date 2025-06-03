@@ -1,0 +1,53 @@
+.woocommerce-layout__header-wrapper, .wrap .wp-heading-inline+.page-title-action, div#woocommerce-order-source-data,
+div#litespeed_meta_boxes, div#woocommerce-order-downloads, div#order_custom, button.button-link.editinline,
+.postbox-header,
+p.form-field._sale_price_field,
+#woocommerce-product-data ul.wc-tabs li:nth-of-type(3),
+#woocommerce-product-data ul.wc-tabs li:nth-of-type(4),
+#woocommerce-product-data ul.wc-tabs li:nth-of-type(5),
+#woocommerce-product-data ul.wc-tabs li:nth-of-type(6),
+#woocommerce-product-data ul.wc-tabs li:nth-of-type(7),
+.column-origin,
+tr.user-role-wrap,
+tr.user-display-name-wrap,
+h2+table#fieldset-shipping,
+li.marketplace-suggestions_options.marketplace-suggestions_tab  {
+    display: none !important;
+}
+.pedido-precisa-atencao {
+            background-color: #ffe5e5 !important;
+            border-left: 5px solid red !important;
+        }
+#flat_rates_wrapper p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+#flat_rates_wrapper input[type='number'] {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+#add_flat_rate {
+    margin-top: 8px;
+}
+#flat_rate_error {
+    margin-top: 8px;
+    font-weight: bold;
+}
+#wp__notice-list.woocommerce-layout__notice-list-hide {
+  display: block !important;
+}
+.notice {
+  display: none !important;
+}
+
+#wp__notice-list .notice-orders,
+#wp__notice-list .notice-new-order,
+#wp__notice-list #setting-error-settings_updated
+{
+  display: block !important;
+}
+
