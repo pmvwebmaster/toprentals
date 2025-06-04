@@ -1,0 +1,29 @@
+# Ignora tudo por padrão
+/*
+
+# Exceto as pastas desejadas
+!/themes/
+!/themes/happyrentalsfloridatheme/
+!/plugins/
+!/uploads/
+
+# Ignora arquivos de backup e .wpress
+*.wpress
+ai1wm-backups/
+upgrade/
+upgrade-temp-backup/
+litespeed/
+
+# Ignora arquivos temporários e de sistema
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignora arquivos PHP session
+*.sess
+
+# Ignora arquivos ocultos exceto .gitignore
+.*
+!.gitignore
