@@ -23,6 +23,7 @@ jobs:
     steps:
       - name: Repo Checkout
         uses: actions/checkout@v2
+      - name: Deploying Message
         run: echo "Deploying to dev.toprentalsscooters.com..."
       - name: Hostinger Deployment
         uses: easingthemes/ssh-deploy@v2.0.0
@@ -42,6 +43,7 @@ jobs:
     steps:
       - name: Repo Checkout
         uses: actions/checkout@v2
+      - name: Deploying Message
         run: echo "Deploying to tst.toprentalsscooters.com..."
       - name: Hostinger Deployment
         uses: easingthemes/ssh-deploy@v2.0.0
@@ -61,6 +63,7 @@ jobs:
     steps:
       - name: Repo Checkout
         uses: actions/checkout@v2
+      - name: Deploying Message
         run: echo "Deploying to hmg.toprentalsscooters.com..."
       - name: Hostinger Deployment
         uses: easingthemes/ssh-deploy@v2.0.0
