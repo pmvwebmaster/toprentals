@@ -1,0 +1,80 @@
+name: dev.toprentalsscooters.com deployment
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: echo "Building the project..."
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+    environment: 
+        name: dev
+        url: {{ vars.URL}}
+    needs: build
+    steps:
+      - name: Repo Checkout
+        uses: actions/checkout@v2
+        run: echo "Deploying to dev.toprentalsscooters.com..."
+      - name: Hostinger Deployment
+        uses: easingthemes/ssh-deploy@v2.0.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          ARGS: "rlgoDzvc --delete"
+          SOURCE: ${{ vars.HOSTINGER_SOURCE }}
+          REMOTE-USER: ${{ vars.HOSTINGER_REMOTE_USER }}
+          REMOTE-HOST: ${{ vars.HOSTINGER_REMOTE_HOST }}
+          REMOTE_PORT: ${{ vars.HOSTINGER_REMOTE_PORT }}  
+          TARGET: ${{ vars.HOSTINGER_TARGET }}
+
+  deploy-tst:
+    runs-on: ubuntu-latest
+    environment: 
+        name: tst
+        url: {{ vars.URL }}
+    needs: deploy-dev
+    steps:
+      - name: Repo Checkout
+        uses: actions/checkout@v2
+        run: echo "Deploying to tst.toprentalsscooters.com..."
+      - name: Hostinger Deployment
+        uses: easingthemes/ssh-deploy@v2.0.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          ARGS: "rlgoDzvc --delete"
+          SOURCE: ${{ vars.HOSTINGER_SOURCE }}
+          REMOTE-USER: ${{ vars.HOSTINGER_REMOTE_USER }}
+          REMOTE-HOST: ${{ vars.HOSTINGER_REMOTE_HOST }}
+          REMOTE_PORT: ${{ vars.HOSTINGER_REMOTE_PORT }}
+          TARGET: ${{ vars.HOSTINGER_TARGET }}
+
+  deploy-hmg:
+    runs-on: ubuntu-latest
+    environment: 
+        name: hmg
+        url: {{ vars.URL }}
+    needs: deploy-tst
+    steps:
+      - name: Repo Checkout
+        uses: actions/checkout@v2
+        run: echo "Deploying to hmg.toprentalsscooters.com..."
+      - name: Hostinger Deployment
+        uses: easingthemes/ssh-deploy@v2.0.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          ARGS: "rlgoDzvc --delete"
+          SOURCE: ${{ vars.HOSTINGER_SOURCE }}
+          REMOTE-USER: ${{ vars.HOSTINGER_REMOTE_USER }}
+          REMOTE-HOST: ${{ vars.HOSTINGER_REMOTE_HOST }}
+          REMOTE_PORT: ${{ vars.HOSTINGER_REMOTE_PORT }}
+          TARGET: ${{ vars.HOSTINGER_TARGET }}
