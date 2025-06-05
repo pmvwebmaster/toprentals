@@ -27,3 +27,6 @@ Thumbs.db
 # Ignora arquivos ocultos exceto .gitignore
 .*
 !.gitignore
+!.github
+!.github/.workflows
+!.github/workflows/*.yml
