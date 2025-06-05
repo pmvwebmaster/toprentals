@@ -100,7 +100,7 @@ function delivery_locations_callback() {
 
 function pickup_locations_callback() {
     $value = esc_textarea(get_option('pickup_locations'));
-    echo "<textarea name='pickup_locations' rows='10' cols='50' class='large-text'>$value</textarea>";
+    echo "<textarea name='pickup_locations tst' rows='10' cols='50' class='large-text'>$value</textarea>";
 }
 
 
