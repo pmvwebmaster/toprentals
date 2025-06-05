@@ -18,9 +18,7 @@ jobs:
 
   deploy-dev:
     runs-on: ubuntu-latest
-    environment: 
-        name: dev
-        url: {{ vars.URL}}
+    environment: dev
     needs: build
     steps:
       - name: Repo Checkout
@@ -39,9 +37,7 @@ jobs:
 
   deploy-tst:
     runs-on: ubuntu-latest
-    environment: 
-        name: tst
-        url: {{ vars.URL }}
+    environment: tst
     needs: deploy-dev
     steps:
       - name: Repo Checkout
@@ -60,9 +56,7 @@ jobs:
 
   deploy-hmg:
     runs-on: ubuntu-latest
-    environment: 
-        name: hmg
-        url: {{ vars.URL }}
+    environment: hmg
     needs: deploy-tst
     steps:
       - name: Repo Checkout
